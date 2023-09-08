@@ -27,11 +27,12 @@ func CalculGame() {
 		for choix == n {
 			fmt.Println("Bravo ! Vous avez trouvé le nombre !")
 			fmt.Println("Voulez vous rejouer ?")
+			fmt.Println("1 - OUI | 2 - NON")
 			var replay int
 			fmt.Scan(&replay)
 			if replay == 1 {
 				CalculGame()
-			} else {
+			} else if replay == 2 {
 				fmt.Println("Bonne Continuation le jeux va s'arreter")
 				break
 			}
@@ -56,15 +57,15 @@ func PointeurGAME() {
 	var theorie int
 	ingame = 1
 	for ingame == 1 {
-		theorie = age/2 + 7
 		fmt.Println("Bienvenue sur la théorie du pointeur")
 		fmt.Println("Elle va te dire avec qu'elle age maximum tu peu sortir avec d'etre dit comme pointeur")
 		fmt.Println("Indique ton age: ")
 		fmt.Scan(&age)
 		fmt.Println(" ")
 		fmt.Println("Vous pouvez donc sortir avec des personnes de: ")
+		theorie = age/2 + 7
 		fmt.Print(theorie)
-		fmt.Print("ans max")
+		fmt.Print(" ans max")
 		fmt.Println(" ")
 		fmt.Println(" ")
 		time.Sleep(2 * time.Second)
