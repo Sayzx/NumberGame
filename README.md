@@ -18,7 +18,7 @@ cd NumberGame
 go run main.go
 ```
 ### Manually
-- Download [https://github.com/Sayzx/zF5/](https://github.com/Sayzx/NumberGame/)
+- Download [https://github.com/Sayzx/NumberGame](https://github.com/Sayzx/NumberGame/)
 - Go into NumberGame Folder
 - Open Terminal and write : ```go run main.go```
 
